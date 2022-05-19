@@ -1,0 +1,145 @@
+/* COLORS */
+#541690 #FF4949 #FF8D29 #FFCD38 #444
+/* COLORS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #444;
+}
+/* NAVIGATION */
+header {
+  background-color: #ffcd38;
+  height: 5rem;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  color: #541690;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.nav-link:hover,
+.nav-link:active {
+  color: #ff4949;
+}
+
+/* has to have both classes and is more specific. so it over-rides. */
+.nav-link.nav-red {
+  color: #ff4949;
+}
+
+.nav-logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* text-transform: uppercase; */
+}
+/* FLEX-BOX */
+.navigation {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.nav-list {
+  display: flex;
+  gap: 2.6rem;
+}
+/* SECTION HERO */
+.section-hero {
+  height: calc(100vh - 5rem);
+  display: flex;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 0 auto;
+  position: relative;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-testimonials {
+  max-width: 25rem;
+  height: 70%;
+  overflow-y: scroll;
+  position: relative;
+  top: 5rem;
+  left: 0;
+}
+
+.hero-img img {
+  height: 35rem;
+  margin-top: 5rem;
+}
+
+/* STLING A TESTIMONIAL */
+.testimonial-upper-star-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-upper-star-date p {
+  margin: 0;
+}
+.testimonial-lower-text {
+  margin-top: 0.5rem;
+}
+
+.testimonial-upper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.testimonial-upper img {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.testimonial-stars {
+  color: #ff4949;
+}
+
+.testimonial-list {
+  list-style: none;
+}
+/* HERO TEXT */
+.hero-heart {
+  color: #ff4949;
+}
+.hero-text {
+  position: absolute;
+  top: 18rem;
+  left: 30rem;
+}
+
+.spanish {
+  font-size: 2rem;
+}
+.upper-text {
+  font-size: 1.5rem;
+}
+
+.spanish-word {
+  /* letter-spacing: 1.2px; */
+}
+
+.spanish {
+  color: #ff4949;
+}
+
+.certified {
+  position: relative;
+}
